@@ -1,10 +1,10 @@
 # Content Changed
 
-I've coded this small Windows form application because I wanted to know when the new Apple Store was back online with new goodies.
+I've coded this small Windows Forms app because I wanted to know when the new Apple Store was back online with new goodies without having to refresh it all the time.
 
 ## What does it do
 
-Basicly it get's the html of a url and compares it with the html fetched x ms later. If the content is different, you'll be notified.
+Basically it gets the html of a url and compares it with the html fetched x ms later. If the content is different, you'll be notified.
 
 ## Screenshot
 
