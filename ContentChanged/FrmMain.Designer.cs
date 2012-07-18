@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.browser = new System.Windows.Forms.WebBrowser();
             this.btnMonitor = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
@@ -130,9 +131,9 @@
             this.Controls.Add(this.btnMonitor);
             this.Controls.Add(this.browser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMain";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Content Changed";
             this.logGroup.ResumeLayout(false);
