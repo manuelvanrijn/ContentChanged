@@ -111,8 +111,9 @@
 
             if(_content != content)
             {
-                Stop();
                 Log("Content changed! Monitoring stopped", true);
+                Stop();
+                _started = false;
                 MessageBox.Show(Resources.contentChanged);
             }
             else
