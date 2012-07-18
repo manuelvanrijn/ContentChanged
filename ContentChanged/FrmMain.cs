@@ -44,7 +44,7 @@
             _content = string.Empty;
             timer.Interval = int.Parse(txtRate.Text);
             timer.Enabled = true;
-            TimerTick(null, null);
+            browser.Url = new Uri(txtUrl.Text);
 
             btnMonitor.Text = "Stop monitoring";
             txtUrl.Enabled = false;
@@ -73,12 +73,12 @@
             if(_content != content)
             {
                 Stop();
-                Log("Content changed! Monitoring stopped");
+                Log("Content changed! Monitoring stopped", true);
                 MessageBox.Show("Content Changed!");
             }
             else
             {
-                Log("nothing changed...");
+                Log("nothing changed...", true);
             }
 
         }
@@ -100,6 +100,14 @@
 
         protected void Log(string message)
         {
+            Log(message, false);
+        }
+
+        protected void Log(string message, bool replacePrevious)
+        {
+            if(replacePrevious)
+                listLog.Items.RemoveAt(listLog.Items.Count-1);
+
             listLog.Items.Add(string.Format("{0} - {1}", DateTime.Now.ToString("HH:mm:ss"), message));
         }
         #endregion
