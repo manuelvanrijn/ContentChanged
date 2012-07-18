@@ -3,6 +3,9 @@
     using System;
     using System.Windows.Forms;
 
+    /// <summary>
+    /// Program
+    /// </summary>
     static class Program
     {
         /// <summary>
