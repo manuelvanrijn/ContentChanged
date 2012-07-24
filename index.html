@@ -1,66 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Contentchanged by manuelvanrijn</title>
+    <title>ContentChanged - Manuel van Rijn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ContentChanged project page">
+    <meta name="author" content="Manuel van Rijn">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Le styles -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5sim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Contentchanged</h1>
-        <p>Notifies you when the content of a page is changed</p>
 
-        <p class="view"><a href="https://github.com/manuelvanrijn/ContentChanged">View the Project on GitHub <small>manuelvanrijn/ContentChanged</small></a></p>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
 
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">ContentChanged</a>
+          <div class="nav-collapse">
 
-        <ul>
-          <li><a href="https://github.com/manuelvanrijn/ContentChanged/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/manuelvanrijn/ContentChanged/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/manuelvanrijn/ContentChanged">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>Content Changed</h1>
+            <ul class="nav">
+              <li class="active"><a href="#home">Intro</a></li>
+              <li><a href="#whatwhy">What and Why</a></li>
+              <li><a href="#screenshot">Screenshot</a></li>
+            </ul>
 
-<p>I've coded this small Windows Forms app because I wanted to know when the new Apple Store was back online with new goodies without having to refresh it all the time.</p>
-
-<h2>What does it do</h2>
-
-<p>Basically it gets the html of a url and compares it with the html fetched x ms later. If the content is different, you'll be notified.</p>
-
-<h2>Screenshot</h2>
-
-<p><img src="http://manuel.manuelles.nl/images/posts/content-changed.png" alt="Content Changed"></p>
-
-<h2>License</h2>
-
-<p>Copyright (c) 2012 Manuel van Rijn
-Licensed under the MIT, GPL licenses.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/manuelvanrijn">manuelvanrijn</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-17149124-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
+    <!-- INTRO
+    ================================================== -->
+    <header>
+      <div class="container">
+        <h1>ContentChanged</h1>
+        <p>Simple .NET Windows Forms application that monitors and notifies you, when the page is changed</p>
+        <div>
+          <a class="btn btn-primary btn-large" href="https://github.com/manuelvanrijn/ContentChanged"><i class="icon-eye-open"></i> View on GitHub</a>
+          <a class="btn btn-inverse btn-large" href="https://github.com/downloads/manuelvanrijn/ContentChanged/ContentChanged.zip"><i class="icon-download-alt"></i> Download (v1.0)</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <!-- WHAT and WHY
+      ================================================== -->
+      <section id="whatwhy">
+        <div class="row">
+          <div class="span6">
+            <div class="page-header">
+              <h2>What</h2>
+            </div>
+            <p>Basically it gets the html of a url and compares it with the html fetched x ms later. If the content is different, you'll be notified.</p>
+          </div>
+          <div class="span6">
+            <div class="page-header">
+              <h2>Why</h2>
+            </div>
+            <p>I've coded this small Windows Forms app because I wanted to know when the new Apple Store was back online with new goodies without having to refresh it all the time.</p>
+          </div>
+      </section>
+
+      <!-- SCREENSHOT
+      ================================================== -->
+      <section id="screenshot">
+        <div class="page-header">
+          <h2>Screenshot</h2>
+        </div>
+        <div class="row">
+          <div class="span12">
+
+            <p><img src="http://manuel.manuelles.nl/images/posts/content-changed.png" alt="Content Changed"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER
+      ================================================== -->
+      <footer class="footer">
+        <p class="pull-right"><a href="#home">Back to top</a></p>
+        <p>
+          <a href="https://github.com/manuelvanrijn/ContentChanged">ContentChange</a> is built and maintained by <a href="http://manuel.manuelles.nl/">Manuel van Rijn</a>.
+          Follow me on <a href="http://twitter.com/manuelvanrijn/">Twitter</a>, <a href="https://github.com/manuelvanrijn/">GitHub</a> and <a rel="me" href="https://plus.google.com/u/0/117895812778172164201?rel=author">Google+</a>.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="assets/google-code-prettify/prettify.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script>$(function () { prettyPrint() })</script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17149124-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>
