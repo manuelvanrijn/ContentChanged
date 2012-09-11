@@ -4,7 +4,7 @@ I've coded this small Windows Forms app because I wanted to know when the new Ap
 
 ## What does it do
 
-Basically it gets the html of a url and compares it with the html fetched x ms later. If the content is different, you'll be notified.
+Basically it gets the html of a url and compares it with the html fetched x ms before. If the content is different, you'll be notified.
 
 ## Screenshot
 
