@@ -13,3 +13,5 @@ Basically it gets the html of a url and compares it with the html fetched x ms b
 ## License
 Copyright (c) 2012 Manuel van Rijn
 Licensed under the MIT, GPL licenses.
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/463b475d4a203dea2005307c85326970 "githalytics.com")](http://githalytics.com/manuelvanrijn/ContentChanged)
